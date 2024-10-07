@@ -1,6 +1,4 @@
-import { TableComTableComponentTanStack } from "./TableComTableComponentTanStack";
-
-import { TableComponentManualStyling } from "./TableComponentManualStyling";
+import MyTable from "./MyTable";
 
 export type TableComponentProps = {
   left?: string[];
@@ -11,7 +9,7 @@ function App() {
   return (
     <div
       style={{
-        width: "800px",
+        width: "1200px",
         height: "100%",
         minHeight: "100vh",
         display: "flex",
@@ -21,16 +19,7 @@ function App() {
         flexDirection: "column",
       }}
     >
-      <h1>Manual Implementation</h1>
-      <TableComponentManualStyling />
-      <h1
-        style={{
-          marginTop: "20px",
-        }}
-      >
-        TanStack Table
-      </h1>
-      <TableComTableComponentTanStack />
+      <MyTable />
     </div>
   );
 }
